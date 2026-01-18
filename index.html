@@ -1,0 +1,163 @@
+<style>
+  :root {
+    --plum: #651341;
+    --teal-dark: #16697A;
+    --teal: #489FB5;
+    --teal-light: #82C0CC;
+    --offwhite: #EDE7E3;
+    --orange: #FFA62B;
+    --paper: #ffffff;
+    --text: var(--teal-dark);
+    --line: rgba(22, 105, 122, 0.22);
+    --soft: rgba(237, 231, 227, 0.55);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #fff;
+    font-family: "Heebo", "Assistant", "Rubik", Calibri, Arial, sans-serif;
+    color: var(--text);
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .sheet {
+    background: var(--paper);
+    border: 3px solid var(--plum);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  /* ===== Banner ===== */
+  .banner {
+    background: linear-gradient(90deg, var(--plum), var(--teal-dark));
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+  }
+
+  /* ===== Content ===== */
+  .content {
+    padding: 18px 22px 16px;
+  }
+
+  .section {
+    margin-top: 18px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--plum);
+    margin-bottom: 8px;
+  }
+
+  /* ===== Adizes ===== */
+  .adizes {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 10px;
+  }
+
+  .adizes-box {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--teal-dark);
+    border-radius: 10px;
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    background: #fff;
+    color: var(--teal-dark);
+  }
+
+  /* ===== Inputs ===== */
+  .line-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--line);
+    padding: 8px 4px 6px;
+    font-size: 15px;
+    background: transparent;
+    margin-bottom: 6px;
+    color: var(--teal-dark);
+  }
+
+  .numbered {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 8px;
+    align-items: end;
+  }
+
+  .num {
+    font-weight: 800;
+    font-size: 15px;
+  }
+
+  .insights {
+    border: 2px solid var(--line);
+    border-radius: 12px;
+    padding: 10px;
+    background: linear-gradient(180deg, #fff 0%, var(--soft) 100%);
+  }
+
+  /* ===== Footer ===== */
+  .footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(22, 105, 122, 0.18);
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .footer .name {
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--plum);
+  }
+
+  .footer .desc {
+    font-weight: 600;
+    font-size: 12.5px;
+    color: var(--teal-dark);
+    white-space: nowrap;
+  }
+
+  /* ===== Print ===== */
+  @media print {
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    .page {
+      margin: 0;
+      padding: 0;
+    }
+
+    .sheet {
+      border-radius: 0;
+    }
+  }
+</style>
